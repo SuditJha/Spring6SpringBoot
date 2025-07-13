@@ -18,7 +18,8 @@ public class LanunchApp2 {
 		DefaultListableBeanFactory container = new DefaultListableBeanFactory();
 		XmlBeanDefinitionReader read =new XmlBeanDefinitionReader(container);
 		read.loadBeanDefinitions("ApplicationConfig.xml");
-		
+//		Can Load multiple config files
+		read.loadBeanDefinitions("ApplicationConfig2.xml");
 		
 		
 		

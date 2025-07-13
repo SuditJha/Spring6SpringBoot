@@ -6,7 +6,7 @@ public class Java implements ICourse {
 		System.out.println("Java Bean Created");
 	}
 	public Boolean getTheCourse(Double price) {
-		System.out.println("Buying Java Boot worth " + price);
+		System.out.println("Buying Java worth " + price);
 		return true;
 	}
 

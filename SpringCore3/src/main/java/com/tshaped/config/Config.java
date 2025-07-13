@@ -1,11 +1,13 @@
 package com.tshaped.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import com.tshaped.service.Password;
 
 @Configuration
+@ComponentScan(basePackages={"com.tshaped"})
 public class Config // id=config 
 {
 

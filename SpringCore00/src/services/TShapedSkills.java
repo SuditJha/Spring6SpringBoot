@@ -4,6 +4,12 @@ public class TShapedSkills {
 	
 	private ICourse course;
 
+
+	public TShapedSkills(ICourse course) {
+		super();
+		this.course = course;
+	}
+
 	public TShapedSkills() {
 		// TODO Auto-generated constructor stub
 	}

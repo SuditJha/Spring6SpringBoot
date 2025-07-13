@@ -3,14 +3,17 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-   <bean id="ts" class="services.TShapedSkills">
-   <property ref="java" name="course"></property>
-   </bean>
+  
    
    
    <bean id="java" class="services.Java"></bean>
    
-   <bean id="sb" class="services.SpringBoot"></bean>
-   
+   <bean id="sb" class="services.SpringBoot"  primary="true"></bean>
+    <bean id="ts" class="services.TShapedSkills" autowire="byType">
+ <!--  Manual Injection
+   <property ref="java" name="course"></property>
+   <constructor-arg ref="java" name="course"></constructor-arg>
+   -->
+   </bean>
    
 	</beans>

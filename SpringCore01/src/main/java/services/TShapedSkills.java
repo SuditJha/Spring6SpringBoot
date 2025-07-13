@@ -9,6 +9,12 @@ public class TShapedSkills {
 		System.out.println("TShaped Skill Bean");
 	}
 
+	public TShapedSkills(ICourse course) {
+		super();
+		System.out.println("Constructor Injection");
+		this.course = course;
+	}
+
 	public void setCourse(ICourse course) {
 		System.out.println("Setter 'Java' Injected");
 		this.course = course;
